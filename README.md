@@ -284,21 +284,29 @@ npm install --save antd-mobile
 
 
 
+
+
+
+
+
+
 ## 参考资料
 
-### 2.1 设计原型
+### 1. 设计原型
 
 https://www.figma.com/
 
-### 2.2 图标库 
+### 2. 图标库 
 
 https://www.iconfont.cn/
 
-### 2.3 UI 组件库
+### 3. UI 组件库
 
 网页： https://ant.design/
 
 Mobile: https://mobile.ant.design/
 
+### 4.React脚手架
 
+https://create-react-app.dev/docs/getting-started
 
