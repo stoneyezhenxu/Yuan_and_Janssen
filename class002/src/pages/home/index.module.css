@@ -1,0 +1,16 @@
+.tabbar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 80px;
+}
+
+.adm-tab-bar-item-active {
+  color: green;
+}
+
+.swiper_img img {
+  width: 100%;
+  height: 100%;
+}
