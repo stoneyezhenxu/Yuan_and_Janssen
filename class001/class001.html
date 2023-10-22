@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  html,
+  body,
+  head {
+    background-color: #EDEDED;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid gray; */
+
+  }
+
+  #container {}
+
+
+
+  .header {
+    height: 160px;
+    /* border: 1px solid gray; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* padding: 30px;
+    border: 1px solid gray; */
+    /* align-items: center; */
+  }
+
+  .header-left-infos {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    /* border: 1px solid gray; */
+    /* height: 80px; */
+  }
+
+  .header-left-infos>div:nth-child(1) {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+  .header-left-infos>div:nth-child(2) {
+    font-size: 15px;
+    color: #717171;
+    margin-bottom: 5px;
+  }
+
+  .header-left-infos-status {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header-left-infos-status>div:nth-child(1) {
+    color: #717171;
+    border: 1px solid gray;
+    border-radius: 14px;
+    margin-right: 10px;
+    padding: 4px;
+    height: 20px;
+    width: 50px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .header-left-infos-status>div:nth-child(2) {
+    color: #717171;
+    border: 1px solid gray;
+    border-radius: 100%;
+    padding: 4px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    /* padding: 4px; */
+    /* margin-bottom: 1px; */
+  }
+
+  .header-left-avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    margin-right: 10px;
+
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-right>div img {
+    height: 27px;
+    width: 27px;
+  }
+
+  .header-right>div:nth-child(1) {
+    margin-right: 8px;
+  }
+
+  .services,
+  .setting {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+  .main-tools,
+  .services,
+  .header,
+  .setting,
+  .navbar {
+    background-color: #FFFFFF;
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    border-bottom: 1px solid #EDEDED;
+    /* color: ; */
+  }
+
+  .item>div:nth-child(1) {
+    display: flex;
+  }
+
+  .item>div:nth-child(1)>div {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  .item>div img {
+    width: 27px;
+    height: 27px;
+  }
+
+  .navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* border: 1px solid gray; */
+    height: 80px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navbar-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-item img {
+    width: 30px;
+    height: 30px;
+  }
+</style>
+
+<body>
+  <div id="container">
+    <div class="header">
+      <div class="header-left">
+        <div class="header-left-avatar">
+          <img src="img/avatar.png">
+        </div>
+        <div class="header-left-infos">
+          <div>石头哥</div>
+          <div>微信号：yezhenxu001</div>
+          <div class="header-left-infos-status">
+            <div>+ 状态</div>
+            <div>…</div>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div>
+          <img src="img/qrcode.png" />
+        </div>
+        <div>
+          <img src="img/rightback.png" />
+        </div>
+      </div>
+
+    </div>
+    <div class="services">
+      <div class="item">
+        <div>
+          <img src="img/dagou.png" />
+          <div>服务</div>
+        </div>
+        <div>
+          <img src="img/rightback.png" />
+        </div>
+      </div>
+    </div>
+    <div class="main-tools">
+      <div class="item">
+        <div>
+          <img src="img/shoucang.png" />
+          <div>收藏</div>
+        </div>
+        <div>
+          <img src="img/rightback.png" />
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <img src="img/pengyouquan.png" />
+          <div>朋友圈</div>
+        </div>
+        <div>
+          <img src="img/rightback.png" />
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <img src="img/video.png" />
+          <div>视频号</div>
+        </div>
+        <div>
+          <img src="img/rightback.png" />
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <img src="img/cardbag.png" />
+          <div>卡包</div>
+        </div>
+        <div>
+          <img src="img/rightback.png" />
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <img src="img/smile.png" />
+          <div>表情 </div>
+        </div>
+        <div>
+          <img src="img/rightback.png" />
+        </div>
+      </div>
+    </div>
+    <div class="setting">
+      <div class="item">
+        <div>
+          <img src="img/seting.png" />
+          <div>设置</div>
+        </div>
+        <div>
+          <img src="img/rightback.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="navbar-item">
+        <img src="img/nvabar/message.png" />
+        <div>微信</div>
+      </div>
+      <div class="navbar-item">
+        <img src="img/nvabar/address.png" />
+        <div>通讯录</div>
+      </div>
+      <div class="navbar-item">
+        <img src="img/nvabar/find.png" />
+        <div>发现</div>
+      </div>
+      <div class="navbar-item">
+        <img src="img/nvabar/me.png" />
+        <div>我</div>
+      </div>
+
+
+    </div>
+
+  </div>
+</body>
+
+</html>
