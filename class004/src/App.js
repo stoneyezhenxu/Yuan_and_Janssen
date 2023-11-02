@@ -1,6 +1,13 @@
 
 import './App.css'
 import React, { useState } from 'react'
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom"
+
+
+import Home from './pages/Home'
+import Me from './pages/Me'
+import News from './pages/News'
+import MainPage from './pages/MainPage'
 
 
 
@@ -63,10 +70,33 @@ const MySecond = () => {
 }
 
 
+
+const MyRouter = () => {
+
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/main" element={<MainPage />}>
+          <Route path='/main/home' element={<Home />} />
+          <Route path="/main/me" element={<Me />} />
+          <Route path="/main/news" element={<News />} />
+        </Route>
+
+
+        <Route path="/mySecond" element={<MySecond />} />
+
+
+      </Routes>
+    </BrowserRouter>
+  )
+
+}
+
+
 function App () {
   return (
     <div>
-      <MySecond />
+      <MyRouter />
     </div>
   )
 }
